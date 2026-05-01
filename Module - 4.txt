@@ -1,0 +1,109 @@
+Module 4 — Multi-Cloud
+The Big Picture
+
+By now you know:
+
+how apps are built (Module 2)
+how they’re deployed (Module 3)
+
+Now the key realization:
+
+All cloud providers do the same things—just with different names
+
+The 3 Major Cloud Providers
+Amazon Web Services
+Microsoft Azure
+Google Cloud Platform
+Important insight
+
+They all provide:
+
+compute
+storage
+databases
+networking
+serverless
+
+👉 Same building blocks, different branding
+
+Service Mapping (THIS is the key skill)
+
+Instead of memorizing names, map concepts:
+
+Compute (virtual machines)
+Concept	AWS	Azure	GCP
+Virtual Machine	EC2	Virtual Machines	Compute Engine
+Storage (files)
+Concept	AWS	Azure	GCP
+Object Storage	S3	Blob Storage	Cloud Storage
+Functions (FaaS)
+Concept	AWS	Azure	GCP
+Serverless	Lambda	Azure Functions	Cloud Functions
+
+👉 Key idea
+
+Learn the concept once → apply everywhere
+
+Why Multi-Cloud Matters
+1. Flexibility
+choose best service per provider
+2. Avoid lock-in
+not stuck with one vendor
+3. Job skill
+companies use different clouds
+
+👉 Real-world:
+
+one company uses AWS
+another uses Azure
+another uses GCP
+
+Differences Between Providers
+
+Even though concepts are same, strengths differ:
+
+Amazon Web Services
+largest ecosystem
+most services
+Microsoft Azure
+strong with enterprise
+integrates with Windows, Office
+Google Cloud Platform
+strong in data + AI
+simpler architecture
+
+👉 Key idea
+
+Same foundation, different strengths
+
+Real Example (Your Physio App)
+
+Let’s map your app:
+
+On AWS
+Backend → Lambda
+DB → RDS / DynamoDB
+Storage → S3
+On Azure
+Backend → Azure Functions
+DB → Azure SQL
+Storage → Blob Storage
+On GCP
+Backend → Cloud Functions
+DB → Firestore
+Storage → Cloud Storage
+
+👉 Same app, different provider names
+
+Final Insight
+
+Cloud providers are like different brands of the same tools
+
+🔥 Final Summary
+What you should remember
+Don’t memorize names
+Understand concepts
+Map services across providers
+One-line takeaway
+
+If you understand one cloud deeply, you can quickly learn the others.

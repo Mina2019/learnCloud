@@ -1,0 +1,220 @@
+Module 2 — Core Architecture
+
+1. Basic App Flow
+User → Frontend → Backend → Database
+2. Backend Options
+Your own server (FastAPI)
+BaaS (Supabase)
+FaaS (Lambda)
+3. Databases
+SQL → structured (tables)
+NoSQL → flexible (JSON-like)
+4. Networking Basics
+API = how frontend talks to backend
+HTTP requests (GET, POST)
+5. Authentication
+Login/signup systems
+Tokens (session, JWT)
+🎯 Goal of Module 2
+
+Understand:
+
+“How a real app is structured”
+
+this is focused on actually understanding how apps are built.
+
+The Big Picture
+
+Every app follows this structure:
+
+```text
+User → Frontend → Backend → Database
+```
+
+* **Frontend** = what user sees (Streamlit, web UI)
+* **Backend** = logic + processing
+* **Database** = stores data
+
+👉 This flow is the backbone of almost all modern apps
+
+---
+
+The backend is where decisions happen.
+
+### What backend does:
+
+* processes user input
+* applies logic
+* talks to database
+* returns results
+
+---
+
+### 3 ways to build a backend
+
+#### 1. Custom backend (full control)
+
+Example: FastAPI
+
+* you write everything
+* most flexible
+
+---
+
+#### 2. BaaS (simplest)
+
+Example: **Supabase**
+
+* auth + database ready
+* minimal backend code
+
+---
+
+#### 3. FaaS (event-based)
+
+Example: **AWS Lambda**
+
+* small functions
+* run only when needed
+
+---
+
+👉 **Key idea**
+
+> Backend is not one thing—it’s a design choice
+
+---
+
+All apps store data.
+
+---
+
+### SQL (structured)
+
+* tables (rows + columns)
+* strict schema
+* example: users, logs
+
+---
+
+### NoSQL (flexible)
+
+* JSON-like
+* no strict structure
+
+---
+
+### Example (your physio app)
+
+SQL table:
+
+| user_id | date | pain_score |
+| ------- | ---- | ---------- |
+
+---
+
+👉 **Key idea**
+
+> Database = memory of your app
+
+---
+
+Frontend and backend communicate using **APIs**.
+
+---
+
+### What is an API?
+
+> A way for two systems to communicate over HTTP
+
+---
+
+### Example flow
+
+```text
+Frontend → POST /log_pain → Backend → Database
+```
+
+---
+
+### Common HTTP methods
+
+* GET → retrieve data
+* POST → send data
+* PUT → update
+* DELETE → remove
+
+---
+
+👉 **Key idea**
+
+> APIs are the glue connecting everything
+
+---
+
+Authentication
+
+Apps need to know **who the user is**.
+
+---
+
+### What auth does:
+
+* login / signup
+* restrict access
+* protect data
+
+---
+
+### Example
+
+User logs in → gets token → uses app securely
+
+With BaaS like **Supabase**, this is mostly handled for you.
+
+---
+
+👉 **Key idea**
+
+> Auth = identity + security
+
+---
+
+Putting it all together
+
+Let’s map your physio app:
+
+```text
+User → Streamlit UI
+     → Supabase API
+     → Database (pain logs)
+```
+
+Optional:
+
+* Add **AWS Lambda** for calculations
+
+---
+
+# 🔥 Final Summary
+
+> Core architecture = how your app is structured and how its parts communicate
+
+---
+
+## The 4 pillars
+
+1. Frontend → user interface
+2. Backend → logic
+3. Database → storage
+4. API → communication
+
+---
+
+## One-line takeaway
+
+> Every app is just components talking to each other in a structured way.
+
+---
+
+

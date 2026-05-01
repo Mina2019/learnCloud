@@ -1,0 +1,125 @@
+This course has been designed in 5 modules:
+
+1. Cloud Fundamentals
+2. Core Architecture
+3. DevOps & Deployment
+4. Multi-Cloud
+5. Enterprise Cloud
+
+--------------------------------------------------------------
+Module 1 — Cloud Fundamentals
+The Big Idea
+
+Before cloud:
+
+Buy servers → install → maintain → expensive
+
+With cloud:
+
+Rent servers → use on demand → pay only for usage
+Definition
+
+Cloud computing = delivering computing services (servers, storage, databases) over the internet
+
+👉 Key idea
+
+You don’t own infrastructure—you rent it
+
+Why Cloud Exists
+Problems with traditional setup:
+expensive hardware
+hard to scale
+maintenance required
+downtime risk
+Cloud solves:
+scalability (grow instantly)
+cost efficiency (pay-as-you-go)
+reliability (multiple data centers)
+
+👉 Example:
+
+10 users → small resources
+10,000 users → scale automatically
+Introduction to AWS
+
+Using Amazon Web Services
+
+What AWS is
+a cloud platform
+provides hundreds of services
+used by startups → large enterprises
+Think of AWS as:
+
+a giant online data center you can use anytime
+
+Core Service Models
+
+This is one of the most important parts.
+
+1. IaaS (Infrastructure as a Service)
+you manage:
+OS
+apps
+cloud manages:
+hardware
+
+👉 Example: EC2
+
+2. PaaS (Platform as a Service)
+you manage:
+code
+cloud manages:
+OS + infrastructure
+3. SaaS (Software as a Service)
+everything managed
+you just use it
+
+👉 Example: Gmail
+
+4. BaaS
+backend ready (auth, database)
+5. FaaS
+run functions on demand
+
+👉 Key idea
+
+These models represent increasing levels of abstraction
+
+Core AWS Services
+Compute
+EC2 → virtual machines
+run your apps
+Storage
+S3 → store files (images, videos, backups)
+Databases
+RDS → SQL database
+DynamoDB → NoSQL database
+
+👉 Key idea
+
+These are the building blocks of most apps
+
+Regions & Availability Zones
+Region
+geographic location (e.g., Canada, US)
+Availability Zone (AZ)
+data center inside a region
+
+👉 Why important?
+
+redundancy
+high availability
+low latency
+Final Insight
+
+Cloud is not just servers—it’s a flexible system of services you combine to build applications.
+
+🔥 Final Summary
+What you should remember
+Cloud = renting computing resources
+AWS = major cloud provider
+Service models = IaaS → PaaS → SaaS → BaaS → FaaS
+Core services = compute, storage, database
+One-line takeaway
+
+Cloud computing lets you build and scale applications without owning infrastructure.

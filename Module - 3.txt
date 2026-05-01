@@ -1,0 +1,117 @@
+Module 3 — DevOps & Deployment
+The Big Picture
+
+Before DevOps:
+
+You code → run locally → only you can use it
+
+After DevOps:
+
+You code → push → automatic deploy → users access online
+
+👉 DevOps = automating build, test, and deployment
+
+What is DevOps?
+
+DevOps = Development + Operations
+
+Development → writing code
+Operations → running and maintaining apps
+Core idea
+
+Make software delivery fast, reliable, and repeatable
+
+Without DevOps
+manual deployment
+error-prone
+slow
+With DevOps
+automated pipelines
+consistent deployments
+easier updates
+
+CI/CD (Core of DevOps)
+CI = Continuous Integration
+code is automatically tested when you push it
+CD = Continuous Deployment
+code is automatically deployed
+Example flow
+Write code → push to GitHub → tests run → app deploys
+Tools
+GitHub Actions
+GitLab CI
+Jenkins
+
+👉 Key idea
+
+CI/CD removes manual work and reduces mistakes
+
+Containers (Docker)
+Problem before containers
+“It works on my machine but not on server”
+Solution: Docker
+Packages:
+your code
+dependencies
+environment
+Result
+
+👉 Same app runs anywhere
+
+Simple analogy
+Without Docker = cooking from scratch everywhere
+With Docker = pre-packaged meal 🍱
+
+👉 Key idea
+
+Containers make apps portable and consistent
+
+Kubernetes (CaaS)
+
+When apps scale:
+
+many users
+many containers
+Kubernetes does:
+manages containers
+auto-scales
+restarts failed apps
+Example
+1 user → 1 container
+10,000 users → many containers
+
+👉 Key idea
+
+Kubernetes = automation for large-scale apps
+
+Deployment Goals
+
+Where do apps go?
+
+Cloud platforms:
+Amazon Web Services
+Microsoft Azure
+Google Cloud Platform
+
+Apply to a sample clinic App
+Simple deployment path
+Streamlit app → deploy → users access via URL
+
+With CI/CD:
+
+Code → GitHub → auto deploy → live app updates
+
+Optional scaling:
+
+Docker → containerize app
+Kubernetes → scale later
+🔥 Final Summary
+DevOps stack
+CI/CD → automation
+Docker → packaging
+Kubernetes → scaling
+Cloud → hosting
+One-line takeaway
+
+DevOps is how you reliably get your app from your laptop to users on the internet.
+
